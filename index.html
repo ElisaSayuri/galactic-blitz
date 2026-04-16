@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogue Galactic Blitz, um empolgante endless shooter retro estilo arcade dos anos 80.">
+    <title>Galactic Blitz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div id="game-container">
+        <div id="ui">
+            <div id="score">Pontos: <span id="score-val">0</span></div>
+            <div id="energy">Energia: <span id="energy-val">100%</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="start-screen" class="screen active">
+            <h1 class="glow-title">GALACTIC BLITZ</h1>
+            <p>Use as Setas para mover e Espaço para atirar.</p>
+            <p class="blink">Pressione ESPAÇO para Iniciar</p>
+        </div>
+        <div id="game-over-screen" class="screen">
+            <h1 class="glow-title" style="color: #f00; text-shadow: 0 0 10px #f00;">GAME OVER</h1>
+            <p>Sua pontuação: <span id="final-score">0</span></p>
+            <p class="blink">Pressione ESPAÇO para Tentar Novamente</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
